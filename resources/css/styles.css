@@ -1,0 +1,255 @@
+body {
+  width: 80%;
+  margin: 0 auto;
+  font-family: "montserrat";
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+  border: solid black 2px;
+  padding: 25px 0 10px 0;
+  margin-bottom: 50px;
+}
+
+main {
+  margin: 0 auto 100px auto;
+  width: 100%;
+  min-width: 300px;
+}
+
+main section[id] {
+  margin-left: 40px;
+}
+
+main section {
+  margin-bottom: 20px;
+  min-width: 450px;
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+h2,
+h3 {
+  margin-top: 30px;
+}
+
+p,
+li {
+  font-size: 18px;
+  line-height: 1.2;
+  margin-top: 4px;
+}
+
+hr {
+  width: 90%;
+}
+
+/* color palette begin */
+#colorp .container {
+  display: flex;
+}
+
+.primary-colors .container1,
+.secondary-colors .container1 {
+  display: flex;
+  margin-top: 20px;
+  width: inherit;
+}
+
+.secondary-colors {
+  margin-left: 100px;
+}
+
+.container2 {
+  text-align: center;
+  margin: 0 20px 10px 0px;
+}
+
+.primary-colors .card-type1 {
+  display: block;
+  width: 100px;
+  height: 120px;
+  border-radius: 8px;
+}
+
+.off-black {
+  background-color: #151715;
+}
+
+.skin {
+  background-color: #C1A480
+}
+
+.off-white {
+  background-color: #F3F4ED;
+  border: solid 2px lightgray;
+}
+
+.tealish {
+  background-color: #2E6358;
+}
+
+.primary-colors .container2 p,
+.secondary-colors .container2 p {
+  margin-top: 16px;
+}
+
+.card-type2 {
+  display: block;
+  width: 80px;
+  height: 100px;
+  border-radius: 8px;
+}
+
+.light-gray {
+  background-color: #D9D9D9;
+}
+
+/* color palette end */
+
+/* logos start */
+#logos div {
+  display: flex;
+  margin-top: inherit;
+}
+
+#logos figure img {
+  width: 40%;
+}
+
+#logos figure .white {
+  background: rgb(239, 239, 239);
+  border-radius: 25%;
+  position: relative;
+  left: -50%;
+}
+
+/* logos end */
+
+/* breadcrumb nav begin*/
+.breadcrumb {
+  list-style: none;
+  overflow: hidden;
+  font: 20px Helvetica, Sans-Serif;
+  margin: 40px 0 40px 40px;
+  padding: 0;
+}
+
+.breadcrumb li {
+  float: left;
+  margin: 0;
+}
+
+.breadcrumb li a {
+  text-decoration: none;
+  background: black;
+  color: white;
+  padding: 10px 0 10px 50px;
+  display: block;
+  position: relative;
+  float: left;
+}
+
+.breadcrumb li a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-left: 30px solid black;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+  left: 100%;
+  z-index: 2;
+}
+
+.breadcrumb li a::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-left: 30px solid white;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+  margin-left: 4px;
+  left: 100%;
+  z-index: 1;
+}
+
+.breadcrumb li:first-child a {
+  padding-left: 14px;
+}
+
+/* breadcrumb nav end */
+
+/* fonts begin */
+#fonts div {
+  display: flex;
+}
+
+.tf-name {
+  margin: 20px 0 20px 10px;
+  font-size: 20px;
+}
+
+.g {
+  font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}
+/* fonts end */
+
+/* text styles begin */
+.mht {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.sht {
+  font-size: 24px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: semi-bold;
+}
+
+.pt {
+  font-size: 16px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* text styles end */
+
+/* fallback fonts begin */
+.ver {
+  font-family: Arial;
+}
+
+.sserif {
+  font-family: sans-serif;
+}
+
+.times {
+  font-family: "Times New Roman";
+}
+
+.serif {
+  font-family: serif;
+}
+/* fallback fonts end */
