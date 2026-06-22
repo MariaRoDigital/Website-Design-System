@@ -13,13 +13,7 @@ h1 {
 }
 
 main {
-  margin: 0 auto 100px auto;
-  width: 100%;
-  min-width: 300px;
-}
-
-main section[id] {
-  margin-left: 40px;
+  padding-inline: 2rem;
 }
 
 main section {
@@ -28,8 +22,7 @@ main section {
 }
 
 h2 {
-  font-size: 30px;
-  margin-bottom: 20px;
+  font-size: 1.80rem;
 }
 
 h3 {
@@ -57,20 +50,19 @@ hr {
   display: flex;
 }
 
-.primary-colors .container1,
-.secondary-colors .container1 {
-  display: flex;
-  margin-top: 20px;
-  width: inherit;
+.primary-colors {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .secondary-colors {
   margin-left: 100px;
 }
 
-.container2 {
-  text-align: center;
-  margin: 0 20px 10px 0px;
+.color-container {
+  display: grid;
+  justify-items: center;
+  width: 7rem;
 }
 
 .primary-colors .card-type1 {
@@ -97,16 +89,8 @@ hr {
   background-color: #2E6358;
 }
 
-.primary-colors .container2 p,
-.secondary-colors .container2 p {
-  margin-top: 16px;
-}
-
-.card-type2 {
-  display: block;
-  width: 80px;
-  height: 100px;
-  border-radius: 8px;
+.color-container p {
+  padding-top: .75rem;
 }
 
 .light-gray {
