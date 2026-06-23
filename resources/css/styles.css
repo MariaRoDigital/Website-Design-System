@@ -56,14 +56,9 @@ h3 {
   font-size: var(--step-2);
 }
 
-main {
-  padding-inline: .5rem;
-}
-
-section {
+section,
+.content-wrapper {
   margin-block: 1.75rem;
-  display: grid;
-  row-gap: var(--row-gap);
 }
 
 p,
@@ -83,10 +78,11 @@ li {
 }
 
 .color-container {
+  display: grid;
   justify-items: center;
 }
 
-.color-container p {
+.secondary-colors p {
   padding: .2rem;
 }
 
@@ -182,7 +178,7 @@ li {
 /* fonts begin */
 .font-examples {
   display: grid;
-  row-gap: var(--row-gap);
+  gap: var(--gap)
 }
 
 .g {
