@@ -166,13 +166,9 @@ li {
 }
 
 /* fonts begin */
-#fonts div {
-  display: flex;
-}
-
-.tf-name {
-  margin: 20px 0 20px 10px;
-  font-size: 20px;
+.font-examples {
+  display: grid;
+  row-gap: var(--row-gap);
 }
 
 .g {
