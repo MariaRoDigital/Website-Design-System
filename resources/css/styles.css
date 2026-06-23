@@ -13,9 +13,27 @@
   /* Step 5: 39.8131px → 61.0352px */
   --step-5: clamp(2.4883rem, 2.2713rem + 0.9646vw, 3.8147rem);
 
-  --row-gap: 1.3rem;
-  --column-gap: 1.3rem;
+  --gap: 1.5rem;
+
+  /* ---- responsive grid styling, yes I know half of it is inside the root ---- */
+  /* @link https://utopia.fyi/grid/calculator?c=360,16,1.2,640,20,1.25,5,0,&s=,1.5|2|3|4|6,s-l&g=s,2xl,xl,4 */
+  --grid-max-width: 40.00rem;
+  --grid-gutter: var(--space-s-2xl, clamp(1rem, -4.1429rem + 22.8571vw, 5rem));
+  --grid-columns: 4;
 }
+
+.u-container {
+  max-width: var(--grid-max-width);
+  padding-inline: var(--grid-gutter);
+  margin-inline: auto;
+}
+
+.u-grid {
+  display: grid;
+  gap: var(--grid-gutter);
+}
+
+/* ---- responsive grid styling end ---- */
 
 body {
   font-family: "montserrat";
