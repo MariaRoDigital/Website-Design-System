@@ -57,10 +57,6 @@ li {
 }
 
 /* color palette begin */
-#colorp .container {
-  display: flex;
-}
-
 .primary-colors {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -93,22 +89,16 @@ li {
 
 .off-white {
   background-color: #F3F4ED;
-  border: solid 2px lightgray;
 }
 
 .tealish {
   background-color: #2E6358;
 }
 
-.color-container p {
-  padding-top: .75rem;
-}
 
 .light-gray {
   background-color: #D9D9D9;
 }
-
-/* color palette end */
 
 /* logos start */
 #logos div {
@@ -122,25 +112,13 @@ li {
 
 #logos figure .white {
   background: rgb(239, 239, 239);
-  border-radius: 25%;
-  position: relative;
-  left: -50%;
 }
-
-/* logos end */
 
 /* breadcrumb nav begin*/
 .breadcrumb {
-  list-style: none;
   overflow: hidden;
   font: 20px Helvetica, Sans-Serif;
-  margin: 40px 0 40px 40px;
-  padding: 0;
-}
-
-.breadcrumb li {
-  float: left;
-  margin: 0;
+  margin: 3rem;
 }
 
 .breadcrumb li a {
@@ -155,16 +133,12 @@ li {
 
 .breadcrumb li a::after {
   content: "";
-  display: block;
-  width: 0;
-  height: 0;
   border-top: 50px solid transparent;
   border-bottom: 50px solid transparent;
   border-left: 30px solid black;
   position: absolute;
   top: 50%;
   margin-top: -50px;
-  left: 100%;
   z-index: 2;
 }
 
@@ -188,8 +162,6 @@ li {
   padding-left: 14px;
 }
 
-/* breadcrumb nav end */
-
 /* fonts begin */
 #fonts div {
   display: flex;
@@ -211,7 +183,6 @@ li {
 .bold {
   font-weight: bold;
 }
-/* fonts end */
 
 /* text styles begin */
 .mht {
@@ -229,7 +200,6 @@ li {
   font-size: 16px;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
-/* text styles end */
 
 /* fallback fonts begin */
 .ver {
@@ -247,4 +217,3 @@ li {
 .serif {
   font-family: serif;
 }
-/* fallback fonts end */
