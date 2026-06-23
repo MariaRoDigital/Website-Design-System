@@ -105,16 +105,16 @@ li {
 }
 
 /* logos start */
-#logos div {
+.logos div {
   display: flex;
-  margin-top: inherit;
+  column-gap: var(--column-gap);
 }
 
-#logos figure img {
-  width: 40%;
+.logos img {
+  max-width: 30%;
 }
 
-#logos figure .white {
+.logos .white {
   background: rgb(239, 239, 239);
 }
 
