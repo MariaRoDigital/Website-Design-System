@@ -1,5 +1,9 @@
 /* @link https://utopia.fyi/type/calculator?c=360,16,1.2,2560,20,1.25,5,0,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
 :root {
+  /* Step -2: 11.1111px → 12.8px */
+  --step--2: clamp(0.6944rem, 0.6772rem + 0.0768vw, 0.8rem);
+  /* Step -1: 13.3333px → 16px */
+  --step--1: clamp(0.8333rem, 0.8061rem + 0.1212vw, 1rem);
   /* Step 0: 16px → 20px */
   --step-0: clamp(1rem, 0.9591rem + 0.1818vw, 1.25rem);
   /* Step 1: 19.2px → 25px */
